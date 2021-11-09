@@ -1,0 +1,53 @@
+{
+  "name": "node_microservice",
+  "version": "0.0.1",
+  "description": "Microservice",
+  "main": "src/app.ts",
+  "license": "MIT",
+  "scripts": {
+    "start1": "ts-node src/app.ts",
+    "compile": "make lib",
+    "start": "make devserver",
+    "dockerimage": "make dockerimage",
+    "dockerrun": "make dockerrun",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.0.0",
+    "axios": "^0.19.2",
+    "bunyan": "^1.8.15",
+    "config": "^3.3.0",
+    "dotenv": "^8.2.0",
+    "koa": "^2.11.0",
+    "koa-body": "^4.1.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-joi-router": "^6.0.2",
+    "make": "^0.8.1",
+    "mongoose": "^5.9.5",
+    "node-input-validator": "^4.4.0",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "@types/bunyan": "^1.8.6",
+    "@types/config": "^0.0.36",
+    "@types/koa": "^2.11.2",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-joi-router": "^5.2.3",
+    "@types/koa-router": "^7.4.0",
+    "@types/koa__cors": "^3.0.1",
+    "@types/mongoose": "^5.7.6",
+    "onchange": "^6.1.0",
+    "ts-node": "^8.7.0",
+    "tslint": "^6.1.0",
+    "typescript": "^3.8.3"
+  },
+  "keywords": [
+    "koa",
+    "node",
+    "microservice",
+    "docker",
+    "nodejs",
+    "mongodb",
+    "mongoose"
+  ]
+}
